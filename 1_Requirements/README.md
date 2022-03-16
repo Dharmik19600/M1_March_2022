@@ -39,7 +39,10 @@
       * Code Quality - online tools
     *practice
       * certificates
-      * HackerEarth
+      * [System_setup](https://github.com/stepin654321/MiniProject_Template/wiki)
+      * [HackerEarth](https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/tutorial/)
+      * project
+      
     
     
     
