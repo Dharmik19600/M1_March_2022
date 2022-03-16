@@ -36,6 +36,10 @@
       * Build - windows and Linux
       * unit testing  
       * Analysis
-      * Code Quality - online tools 
+      * Code Quality - online tools
+    *practice
+      * certificates
+      * HackerEarth
+    
     
     
