@@ -64,11 +64,11 @@ Humans irrespective of their age are always curious when it comes to a game whic
 ###### **Where:**
 This game will meet the interests of all people of all nations.
 
-## **##How:**
+### **##How:**
 Many games are very expensive. This game being cost-effective can be purchased by all sections of the society. TBD
 
-## **Detail requirements**
-### **High Level Requirements:**
+#### **Detail requirements**
+##### **High Level Requirements:**
 |ID   |DESCRIPTION                                                |CATEGORY |STATUS     |
 |-----|--------------------------------------------------------------|---------|--------|
 |HLR01|The player who starts first needs to be noted              |Technical|Implemented|
@@ -76,7 +76,7 @@ Many games are very expensive. This game being cost-effective can be purchased b
 |HLR03|The Hardware Implementation                                |Technical|Implemented|
 |HLR04|Decision Making and keen observation                       |Technical|Implemented|
 
-#### **Low level Requirements:**
+##### **Low level Requirements:**
 |ID   |DESCRIPTION                                    |CATEGORY |STATUS     |
 |-----|-----------------------------------------------|---------|-----------|
 |LLR01|The candies piles are in non-decreasing order  |Technical|Implemented|
