@@ -41,31 +41,34 @@ In fact, we can forecast the winner of the game before even playing the game !!!
 Nim Total: The cumulative XOR value of the number of stones in each piles/heaps at any point of the game is called Nim-Total at that point.
 
 “If both A and B play optimally,then the player starting first is guaranteed to win if the Nim-Total at the beginning of the game is non-zero. Otherwise, if the Nim-Total evaluates to zero, then player A will lose definitely.”
+
 #### **COST AND FEATURES AND TIMELINE**
 No cost required to play the game.
-##### ** DEFINING OUR SYSTEM**
+
+##### **DEFINING OUR SYSTEM**
 This is a two-player game where there are a certain number of stacks of candies. Each stack contains certain number of candies. The stacks are arranged in non-decreasing order from left to right based on the number of candies in each stack.
 
 Let the two players be named as Tom and Jerry. For every continuous subsequence of candies stacks, Tom and Jerry will play game on this subsequence of candies stacks, Tom plays first, and they play in turn. In one move, the player can choose one of the stacks and remove at least one candy from it keeping in mind the non-decreasing order of the candies stacks which needs to be maintained. The last person to make a valid move wins.
 
 We need to find the continuous subsequences of candies stacks that will make Tom win if both of them play optimally. The number of candies of each stack will be recovered after the game ends for each subsequences
-###### ** SWOT ANALYSIS **
+
+## **SWOT ANALYSIS**
 ![R4](https://user-images.githubusercontent.com/101189588/161087442-90232568-ab86-4bdc-89e2-034142359b50.png)
-####### **4W's and 1'H**
-######## **Who:**
+### **4W's and 1'H**
+#### **Who:**
 This is a structured form of entertainment and will cater to all the young minds as an educational tool to nurture the brain. Thus, this game will as a tool of fun for the young generation to develop keen observation to dertermine the output of the game to win it.
 
-######### **What:**
+##### **What:**
 Humans irrespective of their age are always curious when it comes to a game which requires developing keen observation. So, such a game is welcomed at all times.
 
-##########**Where:**
+###### **Where:**
 This game will meet the interests of all people of all nations.
 
-######### **##How:**
+## **##How:**
 Many games are very expensive. This game being cost-effective can be purchased by all sections of the society. TBD
 
-############ **Detail requirements**
-############# **High Level Requirements:**
+## **Detail requirements**
+### **High Level Requirements:**
 |ID   |DESCRIPTION                                                |CATEGORY |STATUS     |
 |-----|--------------------------------------------------------------|---------|--------|
 |HLR01|The player who starts first needs to be noted              |Technical|Implemented|
@@ -73,7 +76,7 @@ Many games are very expensive. This game being cost-effective can be purchased b
 |HLR03|The Hardware Implementation                                |Technical|Implemented|
 |HLR04|Decision Making and keen observation                       |Technical|Implemented|
 
-############## **Low level Requirements:**
+#### **Low level Requirements:**
 |ID   |DESCRIPTION                                    |CATEGORY |STATUS     |
 |-----|-----------------------------------------------|---------|-----------|
 |LLR01|The candies piles are in non-decreasing order  |Technical|Implemented|
