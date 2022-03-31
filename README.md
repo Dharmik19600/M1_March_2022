@@ -9,6 +9,7 @@ Visit [Pages for Report -optional](using github.io option)
 
 Build | Code Quality | Unity | [Git Inspector](using github.io option)
 ------|----------|-------|--------------
+[![CI](https://github.com/Dharmik19600/M1_March_2022/actions/workflows/c-cpp.yml/badge.svg?branch=main)](https://github.com/Dharmik19600/M1_March_2022/actions/workflows/c-cpp.yml)
 
 
 
