@@ -1,4 +1,4 @@
-name: C/C++ CI -Build status
+name: CI -Build status
 
 on:
   push:
