@@ -17,25 +17,34 @@
  * @param new_size 
  */
 #include <candy_operations.h>
-void sort_array(int*arr_name,int *count,int size,int*new_size){
-  if (size < 2){
-    (*new_size)=size;
-    return;
-  }
+void sort_array(int*arr_name,int *count,int size,int*new_size)
+{
+  if (size <2)
+    {
+      (*new_size) = size;
+      return;
+    }
+}
+  
   int m = (size+1)/2,iterator_first;
   int *left,*right,*count_left,*count_right;
   left=(int*)malloc(m*sizeof(int));
   right=(int*)malloc((size-m)*sizeof(int));
   count_left=(int*)malloc(m*sizeof(int));
   count_right=(int*)malloc((size-m)*sizeof(int));
-  for(iterator_first=0;iterator_first<m;iterator_first++){
-    left[iterator_first]=arr_name[iterator_first];
-    count_left[iterator_first]=count[iterator_first];
-  }
-  for(iterator_first=0;iterator_first<size-m;iterator_first++){
-    right[iterator_first]=arr_name[iterator_first+m];
-    count_right[iterator_first]=count[iterator_first+m];
-  }
+  
+  for (iterator_first=0;iterator_first<m;iterator_first++)
+    {
+      left[iterator_first]=arr_name[iterator_first];
+      count_left[iterator_first]=count[iterator_first];
+    }
+  
+  for(iterator_first=0;iterator_first<size-m;iterator_first++)
+    {
+      right[iterator_first]=arr_name[iterator_first+m];
+      count_right[iterator_first]=count[iterator_first+m];
+    }
+  
   int new_l_size=0,new_r_size=0;
   sort_array(left,count_left,m,&new_l_size);
   sort_array(right,count_right,size-m,&new_r_size);
@@ -45,7 +54,7 @@ void sort_array(int*arr_name,int *count,int size,int*new_size){
   free(count_left);
   free(count_right);
   return;
-}
+
 /**
  * @brief 
  * Used for Merging the array
@@ -59,33 +68,42 @@ void sort_array(int*arr_name,int *count,int size,int*new_size){
  * @param right_size 
  * @param new_size 
  */
+
 void merge_array(int*arr_name,int*left,int*right,int *count,int*count_left,int*count_right,int left_size, int right_size,int*new_size){
   int iterator_first = 0, iterator_second = 0,index=0;
-  while (iterator_first < left_size|| iterator_second < right_size) {
-    if (iterator_first == left_size) {
-      count[index] = count_right[iterator_second];
-      arr_name[index++] = right[iterator_second];
-      iterator_second++;
-    } else if (iterator_second == right_size) {
-      count[index] = count_left[iterator_first];
-      arr_name[index++] = left[iterator_first];
-      iterator_first++;
-    } else if (left[iterator_first] <= right[iterator_second]) {
-      count[index] = count_left[iterator_first];
-      arr_name[index++] = left[iterator_first];
-      iterator_first++;
-    } else {
-      count[index] = count_right[iterator_second];
-      arr_name[index++] = right[iterator_second];
-      iterator_second++;
-    }
-    if(index>1&&arr_name[index-2]==arr_name[index-1]){
-      index--;
-      count[index-1]+=count[index];
-    }
+  while (iterator_first < left_size|| iterator_second < right_size) 
+    {
+      if (iterator_first == left_size) {
+        count[index] = count_right[iterator_second];
+        arr_name[index++] = right[iterator_second];
+        iterator_second++;
+    }    
+      else if (iterator_second == right_size) 
+        {
+          count[index] = count_left[iterator_first];
+          arr_name[index++] = left[iterator_first];
+          iterator_first++;
+        } 
+      else if (left[iterator_first] <= right[iterator_second]) 
+       {
+          count[index] = count_left[iterator_first];
+          arr_name[index++] = left[iterator_first];
+          iterator_first++;
+        } 
+      else 
+        {
+          count[index] = count_right[iterator_second];
+          arr_name[index++] = right[iterator_second];
+          iterator_second++;
+        }
+      if(index>1&&arr_name[index-2]==arr_name[index-1])
+        {
+          index--;
+          count[index-1]+=count[index];
+        }
   }
-  (*new_size)=index;
-  return;
+    (*new_size)=index;
+    return;
 }
 /**
  * @brief Get the position object
@@ -95,7 +113,8 @@ void merge_array(int*arr_name,int*left,int*right,int *count,int*count_left,int*c
  * @param size 
  * @return int 
  */
-int get_position(int*arr_name,int num,int size){
+int get_position(int*arr_name,int num,int size)
+{
   if(size==0)
     return 0;
   if(num>median_of_array(arr_name,size))
@@ -110,6 +129,7 @@ int get_position(int*arr_name,int num,int size){
  * @param size 
  * @return int 
  */
-int median_of_array(int*arr_name,int size){
+int median_of_array(int*arr_name,int size)
+{
   return arr_name[(size-1)>>1];
 }

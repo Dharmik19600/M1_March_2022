@@ -13,7 +13,6 @@
 #define __CANDY_OPERATIONS_H__
 
 
-
 #include <candy_operations.h>
 /**
  * @brief 
@@ -23,7 +22,7 @@
  * @param size 
  * @param new_size 
  */
-void sort_array(int*arr_name, int *count,int size, int*new_size);
+void sort_array(int*arr_name, int *count,int size, int*ne_size);
 /**
  * @brief 
  * 
@@ -46,7 +45,7 @@ void merge_array(int*arr_name, int*left,int*right, int *count, int*count_left,in
  * @param size 
  * @return int 
  */
-int get_position(int*arr_name, int num, int size);
+int get_positions(int*arr_name, int num, int size);
 /**
  * @brief 
  * Used for Finding Median in the array

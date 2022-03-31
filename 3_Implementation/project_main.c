@@ -3,7 +3,7 @@
  * @author Dharmik Mahulkar (dharmik.mahulkar19@gmail.com)
  * @brief 
  * @version 0.1
- * @date 2021-03-29
+ * @date 2021-03-30
  * 
  * @copyright Copyright (c) 2022
  * 
@@ -127,36 +127,42 @@ int main(){
   }
   for(iterator_first=0;iterator_first<num_of_stacks-1;iterator_first++)
   
-    if(iterator_first%2){
+    if(iterator_first%2)
+    {
       temp_var=dyn_ptr[iterator_first]^dseven[(iterator_first-1)/2];
       iterator_second=get_position(sort_even,temp_var,sort_evensize);
-      if(iterator_second>=0 && iterator_second<sort_evensize && sort_even[iterator_second]==temp_var){
+    if(iterator_second>=0 && iterator_second<sort_evensize && sort_even[iterator_second]==temp_var)
+    {
         temp_var=get_position(even_table[iterator_second]+1,(iterator_first+1)/2,even_table[iterator_second][0]);
         ans+=even_table[iterator_second][0]-temp_var;
-      }
+    }
       temp_var=0;
       if(iterator_first!=1)
         temp_var^=dsodd[(iterator_first-2)/2];
       iterator_second=get_position(sort_odd,temp_var,sort_oddsize);
-      if(iterator_second>=0 && iterator_second<sort_oddsize && sort_odd[iterator_second]==temp_var){
+      if(iterator_second>=0 && iterator_second<sort_oddsize && sort_odd[iterator_second]==temp_var)
+      {
         temp_var=get_position(odd_table[iterator_second]+1,iterator_first/2,odd_table[iterator_second][0]);
         ans+=odd_table[iterator_second][0]-temp_var;
       }
     }
-    else{
+    else
+    {
       temp_var=dyn_ptr[iterator_first];
       if(iterator_first)
         temp_var^=dsodd[(iterator_first-1)/2];
       iterator_second=get_position(sort_odd,temp_var,sort_oddsize);
-      if(iterator_second>=0 && iterator_second<sort_oddsize && sort_odd[iterator_second]==temp_var){
-        temp_var=get_position(odd_table[iterator_second]+1,iterator_first/2,odd_table[iterator_second][0]);
-        ans+=odd_table[iterator_second][0]-temp_var;
-      }
+      if(iterator_second>=0 && iterator_second<sort_oddsize && sort_odd[iterator_second]==temp_var)
+        {
+          temp_var=get_position(odd_table[iterator_second]+1,iterator_first/2,odd_table[iterator_second][0]);
+          ans+=odd_table[iterator_second][0]-temp_var;
+        }
       temp_var=0;
       if(iterator_first)
         temp_var^=dseven[(iterator_first-1)/2];
       iterator_second=get_position(sort_even,temp_var,sort_evensize);
-      if(iterator_second>=0 && iterator_second<sort_evensize && sort_even[iterator_second]==temp_var){
+      if(iterator_second>=0 && iterator_second<sort_evensize && sort_even[iterator_second]==temp_var)
+      {
         temp_var=get_position(even_table[iterator_second]+1,iterator_first/2,even_table[iterator_second][0]);
         ans+=even_table[iterator_second][0]-temp_var;
       }
