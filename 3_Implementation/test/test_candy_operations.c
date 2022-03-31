@@ -1,22 +1,16 @@
 /**
- * @file candy_operations.c
+ * @file test_candy_operations.c
  * @author Dharmik Mahulkar (dharmik.mahulkar19@gmail.com)
  * @brief 
  * @version 0.1
- * @date 2021-03-29
+ * @date 2022-03-29
  * 
  * @copyright Copyright (c) 2022
  * 
  */
-/**
- * @brief 
- * Used for Sorting the array
- * @param arr_name 
- * @param count 
- * @param size 
- * @param new_size 
- */
-#include "candy_operations.h"
+
+#include <candy_operations.h>
+
 void sort_array(int*arr_name,int *count,int size,int*new_size){
   if (size < 2){
     (*new_size)=size;
@@ -46,19 +40,7 @@ void sort_array(int*arr_name,int *count,int size,int*new_size){
   free(count_right);
   return;
 }
-/**
- * @brief 
- * Used for Merging the array
- * @param arr_name 
- * @param left 
- * @param right 
- * @param count 
- * @param count_left 
- * @param count_right 
- * @param left_size 
- * @param right_size 
- * @param new_size 
- */
+
 void merge_array(int*arr_name,int*left,int*right,int *count,int*count_left,int*count_right,int left_size, int right_size,int*new_size){
   int iterator_first = 0, iterator_second = 0,index=0;
   while (iterator_first < left_size|| iterator_second < right_size) {
@@ -87,14 +69,7 @@ void merge_array(int*arr_name,int*left,int*right,int *count,int*count_left,int*c
   (*new_size)=index;
   return;
 }
-/**
- * @brief Get the position object
- * Used for Getting the Position in array
- * @param arr_name 
- * @param num 
- * @param size 
- * @return int 
- */
+
 int get_position(int*arr_name,int num,int size){
   if(size==0)
     return 0;
@@ -103,13 +78,11 @@ int get_position(int*arr_name,int num,int size){
   else
     return get_position(arr_name,num,(size-1)>>1);
 }
-/**
- * @brief 
- * Used for finding the Median in the array
- * @param arr_name 
- * @param size 
- * @return int 
- */
+
 int median_of_array(int*arr_name,int size){
   return arr_name[(size-1)>>1];
 }
+/**
+ * @brief 
+ * 
+ */
