@@ -1,4 +1,4 @@
-name: CI -Build status
+name: CI 
 
 on:
   push:
