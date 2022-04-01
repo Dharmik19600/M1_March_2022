@@ -1,4 +1,4 @@
-# **THE CANDY GAME*
+# **THE CANDY GAME**
 
 
 # SDLC Activity Based Learning
