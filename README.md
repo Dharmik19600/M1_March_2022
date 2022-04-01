@@ -5,9 +5,9 @@
 
 Visit [Pages for Report -optional](using github.io option)
 
-Build | Code Quality | Unity | [Git Inspector](using github.io option)
+Build | Code Quality || [Git Inspector](using github.io option)
 ------|----------|-------|--------------
-[![C - Build](https://github.com/Dharmik19600/M1_March_2022/actions/workflows/c-cpp.yml/badge.svg?branch=main)](https://github.com/Dharmik19600/M1_March_2022/actions/workflows/c-cpp.yml)
+|[![C - Build](https://github.com/Dharmik19600/M1_March_2022/actions/workflows/c-cpp.yml/badge.svg?branch=main)](https://github.com/Dharmik19600/M1_March_2022/actions/workflows/c-cpp.yml)|[![Code Quality - Static Code - Cppcheck](https://github.com/Dharmik19600/M1_March_2022/actions/workflows/cppcheck.yml/badge.svg?branch=main)](https://github.com/Dharmik19600/M1_March_2022/actions/workflows/cppcheck.yml)|[![Code Quality - Static Code - Cppcheck](https://github.com/Dharmik19600/M1_March_2022/actions/workflows/cppcheck.yml/badge.svg?branch=main)](https://github.com/Dharmik19600/M1_March_2022/actions/workflows/cppcheck.yml)|
 
 
 
