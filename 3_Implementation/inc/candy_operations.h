@@ -13,7 +13,12 @@
 #define __CANDY_OPERATIONS_H__
 
 
+<<<<<<< HEAD
 #include <candy_operations.h>
+=======
+#include "candy_operations.c"
+#include "candy_operations.h"
+>>>>>>> 0f360e19d753a37f1d2065534d7796088d1b7df5
 /**
  * @brief 
  * 
