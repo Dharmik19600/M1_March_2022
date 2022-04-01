@@ -9,6 +9,7 @@
  * 
  */
 #include "candy_operations.h"
+
 int main(){
     /**
      * @brief Static Local Variables

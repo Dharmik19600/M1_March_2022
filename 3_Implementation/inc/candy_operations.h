@@ -13,8 +13,8 @@
 #define __CANDY_OPERATIONS_H__
 
 
-#include "stdio.h"
-#include "stdlib.h"
+#include "candy_operations.c"
+#include "candy_operations.h"
 /**
  * @brief 
  * Used for Sorting the array
