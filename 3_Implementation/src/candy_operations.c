@@ -44,6 +44,7 @@ void sort_array(int*arr_name,int *count,int size,int*new_size)
   count_left=(int*)malloc(m*sizeof(int));
   count_right=(int*)malloc((size-m)*sizeof(int));
 <<<<<<< HEAD
+<<<<<<< HEAD
   
   for (iterator_first=0;iterator_first<m;iterator_first++)
     {
@@ -58,6 +59,8 @@ void sort_array(int*arr_name,int *count,int size,int*new_size)
     }
   
 =======
+=======
+>>>>>>> 0f360e19d753a37f1d2065534d7796088d1b7df5
   for(iterator_first=0;iterator_first<m;iterator_first++)
   {
     left[iterator_first]=arr_name[iterator_first];
@@ -97,6 +100,7 @@ void merge_array(int*arr_name,int*left,int*right,int *count,int*count_left,int*c
   int iterator_first = 0, iterator_second = 0,index=0;
   while (iterator_first < left_size|| iterator_second < right_size) 
 <<<<<<< HEAD
+<<<<<<< HEAD
     {
       if (iterator_first == left_size) {
         count[index] = count_right[iterator_second];
@@ -127,6 +131,8 @@ void merge_array(int*arr_name,int*left,int*right,int *count,int*count_left,int*c
           count[index-1]+=count[index];
         }
 =======
+=======
+>>>>>>> 0f360e19d753a37f1d2065534d7796088d1b7df5
   {
     if (iterator_first == left_size) 
     {
