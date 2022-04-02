@@ -8,10 +8,9 @@
  * @copyright Copyright (c) 2022
  * 
  */
-<<<<<<< HEAD
 
-#include <candy_operations.h>
-=======
+
+
 /**
  * @brief 
  * Used for Sorting the array
@@ -20,11 +19,8 @@
  * @param size 
  * @param new_size 
  */
-#include "candy_operations.h"
-<<<<<<< HEAD
->>>>>>> 0f360e19d753a37f1d2065534d7796088d1b7df5
-=======
->>>>>>> 0f360e19d753a37f1d2065534d7796088d1b7df5
+
+#include <candy_operations.h>
 
 void sort_array(int*arr_name,int *count,int size,int*new_size)
 {
@@ -63,29 +59,27 @@ void sort_array(int*arr_name,int *count,int size,int*new_size)
 void merge_array(int*arr_name,int*left,int*right,int *count,int*count_left,int*count_right,int left_size, int right_size,int*new_size)
 {
   int iterator_first = 0, iterator_second = 0,index=0;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
   while (iterator_first < left_size|| iterator_second < right_size)
   {
     if (iterator_first == left_size) 
-=======
+
   while (iterator_first < left_size|| iterator_second < right_size) 
   {
     if (iterator_first == left_size)
->>>>>>> 0f360e19d753a37f1d2065534d7796088d1b7df5
-=======
+
+
   while (iterator_first < left_size|| iterator_second < right_size) 
   {
     if (iterator_first == left_size)
->>>>>>> 0f360e19d753a37f1d2065534d7796088d1b7df5
     {
       count[index] = count_right[iterator_second];
       arr_name[index++] = right[iterator_second];
       iterator_second++;
     } 
       else if (iterator_second == right_size) 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
       {
       count[index] = count_left[iterator_first];
       arr_name[index++] = left[iterator_first];
@@ -103,7 +97,7 @@ void merge_array(int*arr_name,int*left,int*right,int *count,int*count_left,int*c
       arr_name[index++] = right[iterator_second];
       iterator_second++;
       }
-=======
+
     {
       count[index] = count_left[iterator_first];
       arr_name[index++] = left[iterator_first];
@@ -114,7 +108,7 @@ void merge_array(int*arr_name,int*left,int*right,int *count,int*count_left,int*c
       count[index] = count_left[iterator_first];
       arr_name[index++] = left[iterator_first];
       iterator_first++;
-=======
+
     {
       count[index] = count_left[iterator_first];
       arr_name[index++] = left[iterator_first];
@@ -125,7 +119,7 @@ void merge_array(int*arr_name,int*left,int*right,int *count,int*count_left,int*c
       count[index] = count_left[iterator_first];
       arr_name[index++] = left[iterator_first];
       iterator_first++;
->>>>>>> 0f360e19d753a37f1d2065534d7796088d1b7df5
+
     } 
       else
     {
@@ -133,10 +127,7 @@ void merge_array(int*arr_name,int*left,int*right,int *count,int*count_left,int*c
       arr_name[index++] = right[iterator_second];
       iterator_second++;
     }
-<<<<<<< HEAD
->>>>>>> 0f360e19d753a37f1d2065534d7796088d1b7df5
-=======
->>>>>>> 0f360e19d753a37f1d2065534d7796088d1b7df5
+
     if(index>1&&arr_name[index-2]==arr_name[index-1])
     {
       index--;
@@ -146,9 +137,8 @@ void merge_array(int*arr_name,int*left,int*right,int *count,int*count_left,int*c
   (*new_size)=index;
   return;
 }
-<<<<<<< HEAD
 
-=======
+
 /**
  * @brief Get the position object
  * Used for Getting the Position in array
@@ -157,10 +147,7 @@ void merge_array(int*arr_name,int*left,int*right,int *count,int*count_left,int*c
  * @param size 
  * @return int 
  */
-<<<<<<< HEAD
->>>>>>> 0f360e19d753a37f1d2065534d7796088d1b7df5
-=======
->>>>>>> 0f360e19d753a37f1d2065534d7796088d1b7df5
+
 int get_position(int*arr_name,int num,int size)
 {
   if(size==0)
@@ -175,12 +162,10 @@ int median_of_array(int*arr_name,int size)
 {
   return arr_name[(size-1)>>1];
 }
+
 /**
  * @brief 
-<<<<<<< HEAD
  * 
- */
-=======
  * Used for finding the Median in the array
  * @param arr_name 
  * @param size 
@@ -190,4 +175,4 @@ int median_of_array(int*arr_name,int size)
 {
   return arr_name[(size-1)>>1];
 }
->>>>>>> 0f360e19d753a37f1d2065534d7796088d1b7df5
+

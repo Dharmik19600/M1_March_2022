@@ -13,17 +13,20 @@
 #define __CANDY_OPERATIONS_H__
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-#include <candy_operations.h>
-=======
-#include "candy_operations.c"
-#include "candy_operations.h"
->>>>>>> 0f360e19d753a37f1d2065534d7796088d1b7df5
-=======
-#include "candy_operations.c"
-#include "candy_operations.h"
->>>>>>> 0f360e19d753a37f1d2065534d7796088d1b7df5
+
+#include <cand_operations.h>
+
+/*
+ * Filename: e:\session\M1_March_2022\3_Implementation\inc\candy_operations.h
+ * Path: e:\session\M1_March_2022\3_Implementation\inc
+ * Created Date: Friday, April 1st 2022, 12:07:16 pm
+ * Author: Dharmik Mahulkar
+ * 
+ * Copyright (c) 2022 Your Company
+ */
+
+
+
 /**
  * @brief 
  * 
@@ -32,7 +35,9 @@
  * @param size 
  * @param new_size 
  */
-void sort_array(int*arr_name, int *count,int size, int*ne_size);
+
+void sort_array(int*arr_name, int *count,int size, int*new_size);
+
 /**
  * @brief 
  * 
@@ -46,7 +51,9 @@ void sort_array(int*arr_name, int *count,int size, int*ne_size);
  * @param right_size 
  * @param new_size 
  */
+
 void merge_array(int*arr_name, int*left,int*right, int *count, int*count_left,int*count_right, int left_size, int right_size, int*new_size);
+
 /**
  * @brief Get the position object
  * Used for Getting Position in the array
@@ -55,7 +62,9 @@ void merge_array(int*arr_name, int*left,int*right, int *count, int*count_left,in
  * @param size 
  * @return int 
  */
+
 int get_positions(int*arr_name, int num, int size);
+
 /**
  * @brief 
  * Used for Finding Median in the array
