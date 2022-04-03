@@ -16,8 +16,25 @@ We need to find the continuous subsequences of candies stacks that will make Tom
 ## **SWOT ANALYSIS**
 ![R4](https://user-images.githubusercontent.com/101189588/161087442-90232568-ab86-4bdc-89e2-034142359b50.png)
 
-#### **Detail requirements**
-##### **High Level Requirements:**
+### **4W's and 1'H**
+**Who:**
+This is a structured form of entertainment and will cater to all the young minds as an educational tool to nurture the brain. Thus, this game will as a tool of fun for the young generation to develop keen observation to dertermine the output of the game to win it.
+
+**What:**
+Most of the parents do not like that their wards would be adddicted to a game. But, This Candy Game is not addictive at all instead it nurtures the intelligence within an individual to solve it effectively. So, the game being cost-effective can be used by all persons of all ages.
+
+**When:**
+Humans irrespective of their age are always curious when it comes to a game which requires developing keen observation. So, such a game is welcomed at all times.
+
+**Where:**
+This game will meet the interests of all people of all nations.
+
+**How:**
+Many games are very expensive. This game being cost-effective can be purchased by all sections of the society. TBD
+
+
+##### **Detail requirements**
+ **High Level Requirements:**
 |ID   |DESCRIPTION                                                |CATEGORY |STATUS     |
 |-----|--------------------------------------------------------------|---------|--------|
 |HLR01|The player who starts first needs to be noted              |Technical|Implemented|
@@ -25,7 +42,7 @@ We need to find the continuous subsequences of candies stacks that will make Tom
 |HLR03|The Hardware Implementation                                |Technical|Implemented|
 |HLR04|Decision Making and keen observation                       |Technical|Implemented|
 
-##### **Low level Requirements:**
+ **Low level Requirements:**
 |ID   |DESCRIPTION                                    |CATEGORY |STATUS     |
 |-----|-----------------------------------------------|---------|-----------|
 |LLR01|The candies piles are in non-decreasing order  |Technical|Implemented|
